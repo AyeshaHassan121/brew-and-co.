@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew and Co. - Menu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <a href="index.html">
+        <img src="images/logo.png" alt="Brew and Co. logo" class="logo-img">
+      </a>
+
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-wrapper">
+        <button class="cart-btn" id="cart-btn" aria-label="View cart">
+          🛒
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+
+        <div class="cart-dropdown" id="cart-dropdown">
+          <p class="cart-empty" id="cart-empty">Your cart is empty</p>
+          <ul class="cart-items" id="cart-items"></ul>
+          <p class="cart-total" id="cart-total"></p>
+          <p class="cart-note">To place your order, please visit us or contact us directly.</p>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Menu</h1>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="container">
+
+        <div class="menu-tabs">
+          <button class="tab-btn active" data-category="hotcoffees">Hot Coffees</button>
+          <button class="tab-btn" data-category="coldcoffees">Cold Coffees</button>
+          <button class="tab-btn" data-category="frappes">Frappes</button>
+          <button class="tab-btn" data-category="icedteas">Iced Teas</button>
+          <button class="tab-btn" data-category="pastries">Pastries</button>
+          <button class="tab-btn" data-category="sandwiches">Sandwiches</button>
+        </div>
+
+        <!-- HOT COFFEES -->
+        <div class="menu-category active" data-category="hotcoffees">
+
+          <div class="menu-item" data-name="Espresso" data-price="300">
+            <img src="images/menu-americano.png" alt="Espresso">
+            <div class="menu-item-info">
+              <h3>Espresso</h3>
+              <p>Hand-pulled 100% Arabica blend delivers rich layers of flavor and perfect crema. The foundation for each of our signature espresso beverages.</p>
+              <span class="price-badge">Rs. 300</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Cappuccino" data-price="420">
+            <img src="images/menu-capp.png" alt="Cappuccino">
+            <div class="menu-item-info">
+              <h3>Cappuccino</h3>
+              <p>Rich Arabica espresso topped with a smooth layer of velvety foam, creating a balanced and creamy finish.</p>
+              <span class="price-badge">Rs. 420</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Latte" data-price="450">
+            <img src="images/menu-latte.png" alt="Latte">
+            <div class="menu-item-info">
+              <h3>Latte</h3>
+              <p>A creamy blend of rich espresso and gently steamed milk, finished with a delicate layer of foam for a smooth and mellow taste.</p>
+              <span class="price-badge">Rs. 450</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Americano" data-price="350">
+            <img src="images/menu-americano.png" alt="Americano">
+            <div class="menu-item-info">
+              <h3>Americano</h3>
+              <p>Bold espresso balanced with hot water, creating a smooth, rich coffee with a clean and refreshing finish.</p>
+              <span class="price-badge">Rs. 350</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- COLD COFFEES -->
+        <div class="menu-category" data-category="coldcoffees">
+
+          <div class="menu-item" data-name="Iced Latte" data-price="480">
+            <img src="images/menu-icedlatte.png" alt="Iced Latte">
+            <div class="menu-item-info">
+              <h3>Iced Latte</h3>
+              <p>Smooth espresso combined with chilled milk and served over ice for a creamy, refreshing coffee.</p>
+              <span class="price-badge">Rs. 480</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Iced Caramel Latte" data-price="500">
+            <img src="images/menu-icedcaramellatte.png" alt="Iced Caramel Latte">
+            <div class="menu-item-info">
+              <h3>Iced Caramel Latte</h3>
+              <p>Espresso and chilled milk blended with caramel, served over ice for a smooth and sweet finish.</p>
+              <span class="price-badge">Rs. 500</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Iced Americano" data-price="400">
+            <img src="images/menu-icedamericano.png" alt="Iced Americano">
+            <div class="menu-item-info">
+              <h3>Iced Americano</h3>
+              <p>Bold espresso poured over cold water and ice for a crisp, smooth coffee with a refreshing finish.</p>
+              <span class="price-badge">Rs. 400</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Iced Mocha" data-price="500">
+            <img src="images/menu-icedmocha.png" alt="Iced Mocha">
+            <div class="menu-item-info">
+              <h3>Iced Mocha</h3>
+              <p>Rich espresso combined with chilled milk and chocolate, served over ice for a smooth and indulgent coffee.</p>
+              <span class="price-badge">Rs. 500</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FRAPPES -->
+        <div class="menu-category" data-category="frappes">
+
+          <div class="menu-item" data-name="Vanilla Frappe" data-price="480">
+            <img src="images/menu-vanillafrappe.png" alt="Vanilla Frappe">
+            <div class="menu-item-info">
+              <h3>Vanilla Frappe</h3>
+              <p>Creamy vanilla blended with chilled milk and ice for a smooth and refreshing treat.</p>
+              <span class="price-badge">Rs. 480</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Hazelnut Frappe" data-price="500">
+            <img src="images/menu-hazelnutfrappe.png" alt="Hazelnut Frappe">
+            <div class="menu-item-info">
+              <h3>Hazelnut Frappe</h3>
+              <p>Rich hazelnut blended with creamy milk and ice for a smooth, nutty flavor.</p>
+              <span class="price-badge">Rs. 500</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Caramel Frappe" data-price="500">
+            <img src="images/menu-caramelfrappe.png" alt="Caramel Frappe">
+            <div class="menu-item-info">
+              <h3>Caramel Frappe</h3>
+              <p>Creamy coffee blended with caramel, milk, and ice for a sweet and indulgent finish.</p>
+              <span class="price-badge">Rs. 500</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Mocha Frappe" data-price="520">
+            <img src="images/menu-mochafrappe.png" alt="Mocha Frappe">
+            <div class="menu-item-info">
+              <h3>Mocha Frappe</h3>
+              <p>Espresso and chocolate blended with milk and ice for a rich, creamy coffee treat.</p>
+              <span class="price-badge">Rs. 520</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ICED TEAS -->
+        <div class="menu-category" data-category="icedteas">
+
+          <div class="menu-item" data-name="Mango Iced Tea" data-price="350">
+            <img src="images/menu-mangoicetea.png" alt="Mango Iced Tea">
+            <div class="menu-item-info">
+              <h3>Mango Iced Tea</h3>
+              <p>A refreshing blend of smooth iced tea and juicy mango for a sweet, tropical finish.</p>
+              <span class="price-badge">Rs. 350</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Peach Iced Tea" data-price="350">
+            <img src="images/menu-peachicetea.png" alt="Peach Iced Tea">
+            <div class="menu-item-info">
+              <h3>Peach Iced Tea</h3>
+              <p>A refreshing blend of smooth iced tea and juicy peach for a light, fruity finish.</p>
+              <span class="price-badge">Rs. 350</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Strawberry Iced Tea" data-price="350">
+            <img src="images/menu-strawberryicetea.png" alt="Strawberry Iced Tea">
+            <div class="menu-item-info">
+              <h3>Strawberry Iced Tea</h3>
+              <p>A refreshing blend of smooth iced tea and sweet strawberries for a bright, fruity taste.</p>
+              <span class="price-badge">Rs. 350</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PASTRIES -->
+        <div class="menu-category" data-category="pastries">
+
+          <div class="menu-item" data-name="Croissant" data-price="300">
+            <img src="images/menu-croissant.png" alt="Croissant">
+            <div class="menu-item-info">
+              <h3>Croissant</h3>
+              <p>A classic, buttery pastry with delicate, flaky layers, baked fresh for a crisp golden finish.</p>
+              <span class="price-badge">Rs. 300</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Almond Croissant" data-price="380">
+            <img src="images/menu-almondcroissant.png" alt="Almond Croissant">
+            <div class="menu-item-info">
+              <h3>Almond Croissant</h3>
+              <p>A flaky, buttery croissant filled with rich almond cream and baked until golden and crisp.</p>
+              <span class="price-badge">Rs. 380</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Cinnamon Roll" data-price="350">
+            <img src="images/menu-cinnaminroll.png" alt="Cinnamon Roll">
+            <div class="menu-item-info">
+              <h3>Cinnamon Roll</h3>
+              <p>Soft, freshly baked dough swirled with cinnamon and finished with smooth cream cheese icing.</p>
+              <span class="price-badge">Rs. 350</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Blueberry Muffin" data-price="320">
+            <img src="images/menu-muffin.webp" alt="Blueberry Muffin">
+            <div class="menu-item-info">
+              <h3>Blueberry Muffin</h3>
+              <p>A tender, golden muffin packed with juicy blueberries and finished with a lightly sweet crust.</p>
+              <span class="price-badge">Rs. 320</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SANDWICHES -->
+        <div class="menu-category" data-category="sandwiches">
+
+          <div class="menu-item" data-name="Grilled Chicken Sandwich" data-price="550">
+            <img src="images/menu-grilledchicken.png" alt="Grilled Chicken Sandwich">
+            <div class="menu-item-info">
+              <h3>Grilled Chicken Sandwich</h3>
+              <p>Tender grilled chicken with fresh lettuce, tomato, and creamy sauce served in toasted bread.</p>
+              <span class="price-badge">Rs. 550</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Chicken Pesto Sandwich" data-price="600">
+            <img src="images/menu-chickenpesto.png" alt="Chicken Pesto Sandwich">
+            <div class="menu-item-info">
+              <h3>Chicken Pesto Sandwich</h3>
+              <p>Grilled chicken layered with basil pesto, mozzarella, and fresh greens for a rich, savory bite.</p>
+              <span class="price-badge">Rs. 600</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Turkey and Cheese Sandwich" data-price="550">
+            <img src="images/menu-turkeycheese.png" alt="Turkey and Cheese Sandwich">
+            <div class="menu-item-info">
+              <h3>Turkey &amp; Cheese Sandwich</h3>
+              <p>Sliced turkey with melted cheese, fresh lettuce, and tomato served in toasted bread.</p>
+              <span class="price-badge">Rs. 550</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-name="Smoked Chicken Sandwich" data-price="600">
+            <img src="images/menu-smokedchicken.png" alt="Smoked Chicken Sandwich">
+            <div class="menu-item-info">
+              <h3>Smoked Chicken Sandwich</h3>
+              <p>Smoked chicken paired with cheddar, crisp lettuce, and a creamy dressing for a rich and satisfying sandwich.</p>
+              <span class="price-badge">Rs. 600</span>
+              <div class="item-action">
+                <button class="add-cart-btn">Add to Cart</button>
+                <div class="qty-controls" style="display: none;">
+                  <button class="qty-btn qty-decrease">-</button>
+                  <span class="qty-value">0</span>
+                  <button class="qty-btn qty-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Brew and Co. &middot; Lahore &middot; All rights reserved</p>
+      <p>Crafted with <span aria-hidden="true">&hearts;</span> in Lahore</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew and Co. - Gallery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <a href="index.html">
+        <img src="images/logo.png" alt="Brew and Co. logo" class="logo-img">
+      </a>
+
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-wrapper">
+        <button class="cart-btn" id="cart-btn" aria-label="View cart">
+          🛒
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <div class="cart-dropdown" id="cart-dropdown">
+          <p class="cart-empty" id="cart-empty">Your cart is empty</p>
+          <ul class="cart-items" id="cart-items"></ul>
+          <p class="cart-total" id="cart-total"></p>
+          <p class="cart-note">To place your order, please visit us or contact us directly.</p>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Gallery</h1>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+
+        <div class="slider">
+          <button class="slider-arrow prev-btn" id="prev-btn" aria-label="Previous photo">&#8249;</button>
+
+          <div class="slider-track">
+            <div class="slide active">
+              <img src="images/gallery-1.webp" alt="Interior seating area">
+              <p class="slide-caption">Our seating area, made for slow mornings</p>
+            </div>
+            <div class="slide">
+              <img src="images/gallery-2.webp" alt="Coffee counter">
+              <p class="slide-caption">The counter, where every order starts</p>
+            </div>
+            <div class="slide">
+              <img src="images/gallery-3.avif" alt="Cozy reading corner">
+              <p class="slide-caption">A quiet corner made for reading</p>
+            </div>
+            <div class="slide">
+              <img src="images/gallery-4.avif" alt="Cafe storefront">
+              <p class="slide-caption">Find us right on the corner</p>
+            </div>
+            <div class="slide">
+              <img src="images/gallery-5.avif" alt="Latte art close up">
+              <p class="slide-caption">Small details, made with care</p>
+            </div>
+            <div class="slide">
+              <img src="images/gallery-6.jpg" alt="Laptop and coffee on a table">
+              <p class="slide-caption">A good spot to get things done</p>
+            </div>
+          </div>
+
+          <button class="slider-arrow next-btn" id="next-btn" aria-label="Next photo">&#8250;</button>
+        </div>
+
+        <div class="slider-dots" id="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
+          <span class="dot" data-index="5"></span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Brew and Co. &middot; Lahore &middot; All rights reserved</p>
+      <p>Crafted with <span aria-hidden="true">&hearts;</span> in Lahore</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew and Co. - Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <a href="index.html">
+        <img src="images/logo.png" alt="Brew and Co. logo" class="logo-img">
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="cart-btn" id="cart-btn" aria-label="View cart">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <p class="hero-tagline">Small batch, roasted weekly</p>
+        <h1 class="hero-heading">A quiet corner for your first cup of the day</h1>
+        <p class="hero-subtext">Fresh pastries, slow mornings, and coffee we actually stand behind.</p>
+        <a href="menu.html" class="btn-primary">View the menu</a>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="container highlights-grid">
+
+        <article class="highlight-item">
+          <h2>Roasted in-house</h2>
+          <p>Beans turned weekly</p>
+        </article>
+
+        <article class="highlight-item">
+          <h2>Room to stay</h2>
+          <p>Quiet seating, all day</p>
+        </article>
+
+        <article class="highlight-item">
+          <h2>Free wi-fi</h2>
+          <p>Work from a window seat</p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="special">
+      <div class="container">
+        <h2 class="special-heading">Today's special</h2>
+
+        <div class="special-grid">
+
+          <article class="special-card">
+            <img src="images/latte.jpg" alt="Cinnamon oat latte">
+            <h3>Cinnamon oat latte</h3>
+            <p>Espresso, oat milk, cinnamon</p>
+            <p class="price">Rs. 450</p>
+          </article>
+
+          <article class="special-card">
+            <img src="images/croissant.jpg" alt="Almond croissant">
+            <h3>Almond croissant</h3>
+            <p>Almond cream filling</p>
+            <p class="price">Rs. 380</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="container footer-container">
+    <p>&copy; 2026 Brew and Co. &middot; Lahore &middot; All rights reserved</p>
+    <p>Crafted with <span aria-hidden="true">&hearts;</span> in Lahore</p>
+  </div>
+</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

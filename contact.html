@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew and Co. - Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <a href="index.html">
+        <img src="images/logo.png" alt="Brew and Co. logo" class="logo-img">
+      </a>
+
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-wrapper">
+        <button class="cart-btn" id="cart-btn" aria-label="View cart">
+          🛒
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <div class="cart-dropdown" id="cart-dropdown">
+          <p class="cart-empty" id="cart-empty">Your cart is empty</p>
+          <ul class="cart-items" id="cart-items"></ul>
+          <p class="cart-total" id="cart-total"></p>
+          <p class="cart-note">To place your order, please visit us or contact us directly.</p>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-grid">
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-wrapper">
+          <h2>Send Us a Message</h2>
+
+          <form id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+              <p class="error-msg" id="name-error"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+              <p class="error-msg" id="email-error"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+              <p class="error-msg" id="message-error"></p>
+            </div>
+
+            <button type="submit" class="btn-primary">Send Message</button>
+
+          </form>
+        </div>
+
+        <!-- CONTACT DETAILS -->
+        <div class="contact-details">
+
+          <h2>Visit Us</h2>
+
+          <ul class="details-list">
+            <li><strong>Address:</strong> 12 MM Alam Road, Gulberg, Lahore</li>
+            <li><strong>Phone:</strong> +92 300 1234567</li>
+            <li><strong>Email:</strong> hello@brewandco.com</li>
+            <li><strong>Hours:</strong> Open daily, 8am - 9pm</li>
+          </ul>
+
+          <h2>Find Us</h2>
+
+          <ul class="details-list">
+            <li><strong>Facebook:</strong> @brewandco</li>
+            <li><strong>Instagram:</strong> @brewandco</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Brew and Co. &middot; Lahore &middot; All rights reserved</p>
+      <p>Crafted with <span aria-hidden="true">&hearts;</span> in Lahore</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

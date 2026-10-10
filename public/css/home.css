@@ -1,0 +1,9 @@
+.welcome { padding: 80px 0; background: var(--color-bg-alt); min-height: 60vh; display: flex; align-items: center; }
+.welcome .container { width: 100%; }
+.welcome-box { text-align: center; max-width: 700px; margin: 0 auto; }
+.welcome-tag { color: var(--color-accent); text-transform: uppercase; letter-spacing: 2px; font-size: 14px; margin-bottom: 12px; }
+.welcome h1 { font-family: var(--font-heading); color: var(--color-dark); font-size: 2.6rem; margin-bottom: 16px; }
+.welcome p { color: var(--color-text-light); margin-bottom: 8px; }
+.welcome-actions { margin-top: 28px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.welcome-btn { background: var(--color-dark); color: var(--color-cream-text); padding: 12px 26px; border-radius: 6px; display: inline-block; }
+.welcome-btn-outline { background: transparent; color: var(--color-dark); border: 2px solid var(--color-dark); }
